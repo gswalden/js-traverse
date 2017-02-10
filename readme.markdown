@@ -76,7 +76,8 @@ output:
 # methods
 
 Each method that takes an `fn` uses the context documented below in the context
-section.
+section. Note that `fn` should not be an [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), as the contextual `this` object
+will not work as intended.
 
 ## .map(fn)
 
